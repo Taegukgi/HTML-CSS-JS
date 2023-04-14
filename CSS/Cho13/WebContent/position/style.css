@@ -1,0 +1,30 @@
+.box {
+	position: relative;
+	top: 50px;
+	left: 50px;
+	background-color: #ff6b6b;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+}
+
+.box2 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #f9c74f;
+	width: 100px;
+	height: 100px;
+	padding: 20px;
+}
+
+.box3 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #90e0ef;
+	width: 150px;
+	height: 150px;
+	padding: 20px;
+}

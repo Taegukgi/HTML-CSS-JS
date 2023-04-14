@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 340px;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue4;
+}

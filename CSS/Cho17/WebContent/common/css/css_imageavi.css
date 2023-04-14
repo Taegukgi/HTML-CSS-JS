@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#gnav{
+	background-color: #00c4ab;
+}
+#gnav ul{
+	overflow: hidden;
+}
+#gnav li{
+	float: left;
+}	
+#gnav a{
+	display: block;
+	width: 157px;
+	height: 40px;
+	background: url("../img/gnav.png") no-repeat;
+	text-indent: -9999px;
+	color: #fff;
+	background-position: 0 0;
+}
+#gnav .gnav01 a,
+#gnav .gnav06 a{
+	width: 156px;
+}
+/* 처음위치 */
+#gnav .gnav01 a{background-position: 0 0;}
+#gnav .gnav02 a{background-position: -156px 0;}
+#gnav .gnav03 a{background-position: -313px 0;}
+#gnav .gnav04 a{background-position: -470px 0;}
+#gnav .gnav05 a{background-position: -627px 0;}
+#gnav .gnav06 a{background-position: -784px 0;}
+
+#gnav .gnav01 a:hover{background-position: 0 -80px;}
+#gnav .gnav02 a:hover{background-position: -156px -80px;}
+#gnav .gnav03 a:hover{background-position: -313px -80px;}
+#gnav .gnav04 a:hover{background-position: -470px -80px;}
+#gnav .gnav05 a:hover{background-position: -627px -80px;}
+#gnav .gnav06 a:hover{background-position: -784px -80px;}

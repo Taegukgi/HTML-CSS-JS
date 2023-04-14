@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.inner{
+	width: 940px;
+	margin: 0 auto;
+}
+
+body{
+	border-top: #cce739 5px solid;
+}
+
+/* header */
+#header{
+	padding: 10px 0;
+	border-top: #00c4ab solid 5px;
+	background: url("../../common/img/bg_header.png") #e6e6e6;
+}
+
+#header>.inner{
+	display: table;
+}
+
+#logo{
+	margin-right: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	filter: hue-rotate(90deg);	/* 색조를 진하게 변경 */
+}
+
+#catch{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#info{
+	width: 20em;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#info dt{
+	float: left;
+	clear: left;
+	width: 6em;
+}
+
+
+/* footer */
+#footer{
+	padding: 10px 0;
+	background: #e6e6e6;
+}
+#flink{
+	float: left;
+}
+#flink li{
+	display: inline;
+}
+#flink a{
+	padding: 0 10px;
+	background: url("../img/ico_arw01.png") Left center no-repeat;
+	color: #666;
+	text-decoration: none;
+}
+#flink a:hover{
+	text-decoration: underline;
+}
+#copyright{
+	float: right;
+}
+
+/* nav */
+#gnav{
+	background-color: #00c4ab;
+}
+#gnav ul{
+	overflow: hidden;
+}
+#gnav li{
+	float: left;
+	width: 153px;					/* check */
+	border-right: #fff 1px solid;
+}
+#gnav li:first-child{
+	width: 153px;
+	border-left: #fff 1px solid;
+}
+#gnav a{
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+#gnav a:hover{
+	background: #cce739;
+}
+#gnav a.selected{
+	background: #fff;
+	color: #00c4ab;
+	font-weight: bold;
+}
+
+/* layout */
+#contents{
+	width: 898px;
+	margin: 0 auto;
+	padding: 10px 20px 0 20px;
+	border-left: #e6e6e6 1px solid;
+	border-right: #e6e6e6 1px solid;
+}
+#breadcrumbs{
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: #ccc 1px dotted;
+}
+
+#breadcrumbs li{
+	display: inline;
+	font-size: 83%;
+	padding-right: 15px;
+	background: url("../img/ico_arw01.png") right center no-repeat;
+}
+
+/* main */
+#main{
+	width: 680px;
+	margin-bottom: 40px;
+	float: right;
+}
+#side{
+	width: 180px;
+	margin-bottom: 40px;
+	float: left;
+}
+#pagetop{
+	clear: both;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+	-절대비치
+		절대배치는 지정하게 되면 현재 붙어있는 판에서 떨어져 나와 뜬 상태가 된다.
+		절대비치는 부모가 static이면 브라우저의 상단 모서리를 기준으로 배치된다.
+		그래서 절대배치를 적용하고자 한다면 부모에서 relative 나 absolte를 설정하여 사용함을 고려해야한다.
+		절대배치는 후속박스의 레이아웃에 영향을 준다.
+		float 레이아웃과 함께 사용할 수 없다.
+	-상배배치
+		현재의 내 위치를 기준으로 얼마큼 이동할 것인지를 놓고 배치하는 것이다.
+		후속박스의 레이아웃에 영향을 
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div{ width: 150px; height: 50px; text-align: center;}
+
+	#box1{background-color: gray;}
+	#box2{background-color:  green; margin: 0;}
+	#box3{background-color: red; margin: 0 10px;
+		position: relative;
+		left: 100px; right: 100px;}
+	#box4{background-color: orange; margin: 0 20px;}
+	#box5{background-color: darkgray;}
+
+	#container {
+		width: 300px; height: 200px;
+		margin: 0 10px;
+		border: 2px black dashed;
+
+		position: absolute;
+		left: 50px;
+		top:50px;
+	}
+
+</style>
+</head>
+<body>
+	<div id="box1">BOX1</div>
+	<div id="container">
+		<div id="box2">BOX2</div>
+		<div id="box3">BOX3</div>
+		<div id="box4">BOX4</div>
+	</div>
+	<div id="box5">BOX5</div>
+
+</body>
+</html>

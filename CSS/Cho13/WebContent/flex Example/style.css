@@ -1,0 +1,18 @@
+.containar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.item {
+	flex-basis: calc(33.3% - 20px);
+	height: 200px;
+	background-color: #ddd;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}

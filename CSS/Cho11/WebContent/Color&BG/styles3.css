@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	background-color: lightblue;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 600px;
+	margin: 40px auto;
+}
+
+h1 {
+	color: darkblue;
+	text-align: center;
+}
+
+p {
+	color: darkgreen;
+	text-align: justify;
+}

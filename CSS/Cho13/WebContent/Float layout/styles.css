@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div.page {
+	border: 3px solid #CD5C5C;
+	overflow: auto;
+}
+
+h2 { text-align: center;}
+
+header{ border: 3px solid #FFD700;}
+
+nav{
+	border: 3px solid #FF1493;
+	width: 150px;
+	float: left;
+}
+
+nav2{
+	border: 3px solid #FF1493;
+	width: 150px;
+	float: right;
+}
+
+section {
+	border: 3px solid #00BFFF;
+	margin-left: 156px;
+	
+}
+
+footer{ border: 3px solid #00FA9A;}

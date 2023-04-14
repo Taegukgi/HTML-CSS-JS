@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 
+	1.리셋css
+		-html 요소의 기본값을 없애주는 작업
+		-각종 브라우저의 초기 상태를 통일
+		
+		-eric_meyer.css  에릭 마이어 리셋css
+		-html5_doctor.css  html5 대응판 리셋css
+		
+		>> 외부링크로 처리해놓음.
+
+ */
+@import "reset.css";
+
+body{
+	color: #666;
+	/* font-family: sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5; */
+}	
+
+
+img, input, select, textarea {
+	vertical-align: middle;
+}
+
+a{
+	color: #00c4ab;
+}
+
+a:hover {
+	color: #cce739;
+}
+
+a img{
+	opacity: 1;
+}
+
+a:hover img {
+	opacity: 0.7;
+}
+
+.clearfix::after{
+	contain: "";
+	display: block;
+	clear: both;
+}
+

@@ -1,0 +1,29 @@
+.prod-list .caption {
+	position: absolute;
+	top: 200px;
+	width: 640px;
+	height: 540px;
+	padding-top: 20px;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	z-index: 10;
+
+}
+
+.prod-list li:hover .caption {
+	opacity: 1;
+	-moz-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-webkit-transform: translateY(-200px);
+	transform: translateY(-200px);
+}
+
+.prod-list .caption h1, .prod-list .caption p {
+	color: #fff;
+	text-align: center;
+}

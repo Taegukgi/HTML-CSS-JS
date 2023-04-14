@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+	position :
+		.static : 디폴트(생략가능), 위치변경이 불가
+		.relative : 현재위치를 0,0 기준해서 상대적인 이격거리에 배치 ( left, top )
+		.absolute : 브라우저의 왼쪽 상단모서리를 0,0으로 기준해서 배치
+			단, 부모가 relative, absolute일 경우는 부모를 기준으로 한다.
+			겹치는 배치에 활용 - z-index : 값이 클수록 위에 배치
+
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	*{margin: 0; padding: 0;}
+	body {
+		margin: 0; padding: 0;
+		border: 10px solid blue;
+	}
+
+	#container {
+		margin: 50px; padding: 10px; border-width: 0;
+		width: 500px; height: 2500px;
+		background-color: #1254af; opacity: 0.8;
+
+		/* position: relative;
+		left: 50px;
+		right: 50px;  */
+	}
+
+	#box1,#box2,#box3{
+		width: 500px; height: 290px;
+		margin: 0; padding: 0;
+		background-color: #123456;
+		color: white; font-size: 300%; text-align: center;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	#box1 {
+		background-color: yellowgreen;
+		position: static;
+	}
+	#box2 {
+		background-color: orange;
+		position: fixed;
+		left: 800px;
+		top: 200px;
+	}
+	#box3 {
+		position: static
+	}
+	
+
+
+
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1">BOX1</div>
+		<div id="box2">BOX2</div>
+		<div id="box3">BOX3</div>
+		<br><br><br><br>
+		<br><br><br><br>
+		
+
+	</div>
+
+</body>
+</html>
