@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>주문서 양식</title>
+</head>
+<meta charset="UTF-8">
+<body>
+	<h1>주문서</h1>
+	<form>
+	  <fieldset>
+	  	<legend>구매자 정보</legend>
+	  	<label for = "nmae">이름:</label>
+	  	<input type = "text" id = "name" name = "nmae" required><br><br>
+	  	<label for = "email">이메일:</label>
+	  	<input type = "email" id = "email" name = "email" required><br><br>
+	  	<label for = "phone">전화번호:</label>
+	  	<input type = "tel" id = "phone" name = "phone" required><br><br>  
+	  </fieldset>
+	  
+	  <fieldset>
+	  	<legend>상품 선택</legend>
+	  	<input type = "checkbox" id = "product1" name = "product1" value = "Product1"></input>
+	  	<label for = "product1">상품 1</label><br>
+	  	<input type = "checkbox" id = "product2" name = "product2" value = "Product2"></input>
+	  	<label for = "product2">상품 2</label><br>
+	  	<input type = "checkbox" id = "product3" name = "product3" value = "Product3"></input>
+	  	<label for = "product3">상품 3</label>
+	  </fieldset>
+	  
+	  <fieldset>
+	  	<legend>결제 방식</legend>
+	  	<input type = "radio" id = "credit" name = "payment" value = "credit">
+	  	<label for = "credit">신용카드</label><br>
+	  	<input type = "radio" id = "debit" name = "payment" value = "debit">
+	  	<label for = " dedit">직불카드 </label><br>
+	  	<input type = "radio" id = "paypal" name = "payment" value = "paypal">
+	  	<label for = "paypal">온라인 송금</label><br>
+	  </fieldset>
+	  
+	  <br>
+	  <input type = "submit" value = "주문하기">
+	</form>
+</body>
+</html>

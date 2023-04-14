@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HMTL Box Example</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.box{
+			width: 200px;
+			height: 150px;
+			margin: 10px;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			border: 2px solid #333;
+			border-radius: 10px;
+			background-color: #eee;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.box:hover {
+			transform: scale(1.05);
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.box-1 {
+			background-color: #f1c40f;
+		}
+
+		.box-2 {
+			background-color: #2ecc71;
+		}
+
+		.box-3 {
+			background-color: #3498db;
+		}
+
+		.box-4 {
+			background-color: #9b59b6;
+		}
+
+		.box-5 {
+			background-color: #e74c3c;
+		}
+	</style>
+</head>
+<body>
+	<div class="box box-1"> Box 1: Yellow<br>Hover to see the effect</div>
+	<div class="box box-2"> Box 2: Green<br>Hover to see the effect</div>
+	<div class="box box-3"> Box 3: Blue<br>Hover to see the effect</div>
+	<div class="box box-4"> Box 4: Purple<br>Hover to see the effect</div>
+	<div class="box box-5"> Box 5: Red<br>Hover to see the effect</div>
+</body>

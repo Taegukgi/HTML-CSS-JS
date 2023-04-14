@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+	미디어 삽입
+		플로그인을 설치해서 들어야했다.
+		HTML5 
+		
+		
+	오디오 태그
+		(방법 1)
+			< audio src = " 오디오 파일 " controls autoplay loops>
+				이 태그를 지원하지 않는 브라우저 입니다.
+				 </audio>
+		(방법 2)
+			<audio controlls autoplay loops>
+				<source src = " " type = "audio/mpeg ">
+				<source src = " " type = "audio/ogg ">
+			</audio>
+			
+	MIME - Mutipurpose Internet Main Extension
+	
+		- http프로토콜은 텍스트로 데이터를 주고 받는다.
+		- 전송절차 
+			(메일송신자)
+			비 - 아스키데이터 > [ MIME변환 ] > ASCII 데이터 > >>
+			>>> ------ ASCII데이터 ----- >>>
+			(메일수신사) - 서버
+			ASCII데이터 > [MIME역변환] >> 비 - ASCII데이터
+
+	MIME 
+			타입 /			서브타입;매개변수 				예제
+			text			plain			text/plain , text/html , text/css , text/javascript
+			image			jpeg,gif		image/gif , image/jpeg
+			video			mpeg			video/mpeg, video/webrod , video/ogg
+			audio							audio/midi, audio/mpeg , audio/webm , audio
+	
+ -->
+
+
+
+<html lang = "ko">
+<head>
+<meta charset="UTF-8">
+<meta name = "vieport" content = "width = device - width, initial - scale = 1.0">
+<title>오디오 예제</title>
+</head>
+<body>
+	<h3>오디오 태그 예제</h3>
+	<audio controls preload = "none">
+		<source src= "" type="audio/mpeg">
+		<source src= "" type="audio/ogg">
+		브라우저가 오디오 태그를 지원하지 않습니다.
+	</audio>
+
+</body>
+</html>

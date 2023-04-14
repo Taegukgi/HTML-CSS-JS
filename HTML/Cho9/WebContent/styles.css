@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header,
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+}
+
+.nav {
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.nav,
+.aside {
+  flex-basis: 100px;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.aside {
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+/* 미디어 쿼리를 사용하여 768px 이상의 화면에서 레이아웃 변경 */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .header,
+  .footer {
+    flex-basis: 100%;
+  }
+  .nav,
+  .main,
+  .aside {
+    flex-grow: 1;
+  }
+}

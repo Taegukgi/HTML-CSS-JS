@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+ 	웹 폼
+ 		웹 페이지를 통해서 사용자 입력을 받는 웹폼(또는 폼)이라 한다.
+ 		
+ 		-form태그 속성
+ 			action : 입력받는 데이터를 어디로 보낼것이냐 ?
+ 							받은 데이터를 처리할 서버응용프로그램 경로
+ 			method : 폼 데이터를 웹서버에 전송하는 방식
+ 			target : 웹 서버 응용프로그램으로 부터 전송받는 데이터를 출력할 윈도우 이름 
+ 			enctype : 폼 데이터를 웹 서버로 전송할 때 암호화 방식지정
+ 			
+ 		- 폼의 종류
+ 			-input  ( - text : 한줄 텍스트 입력창 / - password: 암호 입력을 위한 한줄 텍스트 입력창  / - image : 이미지 버튼 / - button : 버튼 / -  
+ 			-checkbox
+ 			-radiobox
+ 			-textarea 
+
+
+
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body align="center">
+	<h3>회원등록</h3>
+	<hr size="3" width="800">
+	
+	<table border = "1" >
+		<tr>
+			<td>이 름 </td>
+			<td><input type="text" size="10"></td>
+		</tr>
+		<tr>
+			<td> 성 별</td>
+			<td>
+				<input type="radio" name="" value="여성" checked>&nbsp;
+				<input type="radio" name="" value="여성">
+			</td>
+		</tr>
+		<tr>	
+			<td> 취 미</td>
+			<td>
+				<input type="checkbox" name="hobby" value="게임" checked>&nbsp;
+				<input type="checkbox" name="body" value="영화">영화&nbsp;
+				<input type="checkbox" name="body" value="독서">독서&nbsp;
+				<input type="checkbox" name="body" value="놀기">놀기&nbsp;
+				<input type="checkbox" name="body" value="잠자기">잠자기
+			</td>
+		</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="등록">&nbsp;
+					<input type="result" value="취소">
+			</tr>
+	</table>
+
+</body>
+</html>
