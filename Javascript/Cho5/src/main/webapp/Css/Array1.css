@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	boackground-color: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	heigth: 100vh;
+	margin: 0;
+}
+
+#problem-container {
+	background-color:#fff;
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}

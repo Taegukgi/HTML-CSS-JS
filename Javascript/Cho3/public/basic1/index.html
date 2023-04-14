@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Template String Example</title>
+</head>
+<body>
+	<div id="content"></div>
+	
+	<script>
+		const person = {
+				name:'John doe',
+				age: 25,
+				city: 'New Yotk'
+		};
+		
+		const template =`
+			<h2>${person.name}</h2>
+			<p>Age: ${person.age}</p>
+			<p>City: ${person.city}</p>
+		`;
+		
+		document.getElementByld('content').innerHTML = template;
+	
+	</script>
+
+</body>
+</html>

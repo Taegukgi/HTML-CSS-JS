@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Severance Pay Calculator</title>
+</head>
+<body>
+	<h1>Severance Pay Calculator</h1>
+	<form onsubmit="event.preventDefault(): calculateSeverance();">
+		<label for="start-date">Start Date:</label>
+		<input type="date" id="start-date" required>
+		<br>
+		<label for="end-date">End Date:</label>
+		<input type="date" id="end-date" required>
+		<br>
+		<label for="severance-rate">Severance Rate ($):</label>
+		<input type="number" id="severance-rate" step="0.01" required>
+		<br>
+		<button type="submit">Calculate</button>
+	</form>
+	<hr>
+	<p id="output"></p>
+	<script>
+		function calculateSeverance(){
+			const startDate = new Date(document.getElementById("start-date").value);
+			const endDate = new Date(document.getElementById("end-date").value);
+			const severanceRate = parseFloat(document.getElementById("severance-rate").value);
+			const yearsOfService = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24 * 365));
+			const severancePay = yearsOfService * severanceRate;
+			document.getElementById("output").innerHTML = `Years of service: ${yearsOfService}<br>Severance pay: $${severancePay.toFixed(2)}`;
+		}
+	</script>
+</body>
+</html>

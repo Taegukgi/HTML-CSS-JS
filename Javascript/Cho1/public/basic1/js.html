@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--  
+	1. script 태그안에 작성
+	
+		. head에 작성 >> 함수, 브라우저 실행전에 준비해놓아야 할 코드
+		. body에 작성 - 필요곳에 작성
+		. body에 맨 하단 >> body에 하려면 맨하단에 해라.
+		
+		* HTML 태그들... Dom 트리로 구성해나가는데 이때 자바스크립트코드를 만나면 DOM트리구성을 중지하고 Javascript 코드를 실행한다.
+		
+	2. javasrcipt 파일에 작성
+		. <script src="" ></script> : 사이에 코드를 작성하지 않는다.
+		. 필요하다면 <script> 작성 </script> 추가하면 된다.
+		
+	3. URL에 작성 
+	4. HTML 이벤트 리스너속에 작성-->
+
+<html lang="ko">
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	h3{
+		color:"red";
+	}
+</style>
+<script type="text/javascript">
+
+	document.write("<h3>여기는 헤드위치입니다." 
+			"<span> 헤드에 작성하면 body의 HTML 코드를 실행하기 전에 먼저 해석됩니다. </span></h3>");
+	function over(obj) {
+		obj.src="C:\Users\choon\Downloads\cigarette-gab67030e4_640.png";
+	}
+	function out(obj){
+		obj.scr="C:\Users\choon\Downloads\cigarette-gab67030e4_640.png";
+	}
+</script>
+</head>
+<body>
+	<h3> 마우스를 올려보세여.</h3>
+	<hr>
+	<script>
+		document.write("<h3> 요기는 body위치입니다.</h3>")
+	
+	
+	</script>
+	<img alt="" src="" onmouseover="over(this)" onmouseout="out(this)">
+</body>
+</html>
